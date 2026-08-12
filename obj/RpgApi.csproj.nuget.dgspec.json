@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\henrique\\dsII\\RpgApi\\RpgApi.csproj": {}
+    "D:\\henriq\\PAM\\rpgAPI\\RpgApi.csproj": {}
   },
   "projects": {
-    "D:\\henrique\\dsII\\RpgApi\\RpgApi.csproj": {
+    "D:\\henriq\\PAM\\rpgAPI\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\henrique\\dsII\\RpgApi\\RpgApi.csproj",
+        "projectUniqueName": "D:\\henriq\\PAM\\rpgAPI\\RpgApi.csproj",
         "projectName": "RpgApi",
-        "projectPath": "D:\\henrique\\dsII\\RpgApi\\RpgApi.csproj",
+        "projectPath": "D:\\henriq\\PAM\\rpgAPI\\RpgApi.csproj",
         "packagesPath": "D:\\NUGET_PACKAGES",
-        "outputPath": "D:\\henrique\\dsII\\RpgApi\\obj\\",
+        "outputPath": "D:\\henriq\\PAM\\rpgAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

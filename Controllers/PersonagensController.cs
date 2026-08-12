@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 using System.Data;
 using Microsoft.AspNetCore.Authorization;
 using RpgApi.Extensions;
+using rpgAPI.Services;
+using rpgAPI.Dto;
 
 namespace RpgApi.Controllers
 {
@@ -313,6 +315,22 @@ namespace RpgApi.Controllers
                 else
                     lista = await _context.TB_PERSONAGENS
                     .Where(p => p.Usuario.Id == User.UsuarioId()).ToListAsync();
+                return Ok(lista);
+            }
+            catch (System.Exception ex)
+            {
+                return BadRequest(ex.Message + " - " + ex.InnerException);
+            }
+        }
+
+         [HttpGet("ListarPersonagens/{id}/{classeId}")]
+        public async Task<IActionResult> ListarPersonagemAsync(int id, int classeId)
+        {
+            try
+            {
+                PersonagensServices servico = new PersonagensServices(_context);
+                List<PersonagemDto> lista = await servico.ListarPersonagens(id, classeId);
+
                 return Ok(lista);
             }
             catch (System.Exception ex)
